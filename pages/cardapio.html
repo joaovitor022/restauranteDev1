@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio do Restaurante</title>
+    <!-- Link para CSS do Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Link para CSS personalizado -->
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="../pages/index.html"> Restaurante Dev </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../pages/index.html"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cardápio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 rounded-pill"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-light rounded-pill" type="submit">
+                Buscar
+              </button>
+            </form>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1 class="my-4 text-center">Cardápio do Restaurante</h1>
+
+      <!-- Seção de Categorias -->
+      <div class="row">
+          <!-- Categoria 1: Entradas -->
+          <div class="col-md-6 col-lg-4">
+              <h3 class="text-primary">Entradas</h3>
+              <ul class="list-group mb-4">
+                  <li class="list-group-item">
+                      <h5>Salada Caesar</h5>
+                      <p>Alface, frango grelhado, parmesão e croutons.</p>
+                      <p><strong>Preço:</strong> R$ 18,00</p>
+                  </li>
+                  <li class="list-group-item">
+                      <h5>Bruschetta</h5>
+                      <p>Pão italiano com tomate, manjericão e azeite.</p>
+                      <p><strong>Preço:</strong> R$ 15,00</p>
+                  </li>
+                  <!-- Adicione mais itens de entrada aqui -->
+              </ul>
+          </div>
+
+          <!-- Categoria 2: Pratos Principais -->
+          <div class="col-md-6 col-lg-4">
+              <h3 class="text-primary">Pratos Principais</h3>
+              <ul class="list-group mb-4">
+                  <li class="list-group-item">
+                      <h5>Filé Mignon</h5>
+                      <p>Carne suculenta grelhada com molho de vinho.</p>
+                      <p><strong>Preço:</strong> R$ 50,00</p>
+                  </li>
+                  <li class="list-group-item">
+                      <h5>Salmão Grelhado</h5>
+                      <p>Salmão grelhado com legumes cozidos.</p>
+                      <p><strong>Preço:</strong> R$ 45,00</p>
+                  </li>
+                  <!-- Adicione mais itens de pratos principais aqui -->
+              </ul>
+          </div>
+
+          <!-- Categoria 3: Sobremesas -->
+          <div class="col-md-6 col-lg-4">
+              <h3 class="text-primary">Sobremesas</h3>
+              <ul class="list-group mb-4">
+                  <li class="list-group-item">
+                      <h5>Tiramisu</h5>
+                      <p>Sobremesa italiana com café e mascarpone.</p>
+                      <p><strong>Preço:</strong> R$ 20,00</p>
+                  </li>
+                  <li class="list-group-item">
+                      <h5>Pudim de Leite</h5>
+                      <p>Sobremesa cremosa com calda de caramelo.</p>
+                      <p><strong>Preço:</strong> R$ 18,00</p>
+                  </li>
+                  <!-- Adicione mais itens de sobremesas aqui -->
+              </ul>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>
