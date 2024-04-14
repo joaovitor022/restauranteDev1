@@ -1,125 +1,544 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio do Restaurante</title>
     <!-- Link para CSS do Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
     <!-- Link para CSS personalizado -->
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
 
-  <body>
+<body>
     <!-- Cabeçalho -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="../pages/index.html"> Restaurante Dev </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarMenu"
-            aria-controls="navbarMenu"
-            aria-expanded="false"
-            aria-label="Alternar navegação"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../pages/index.html"
-                  >Início</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cardápio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2 rounded-pill"
-                type="search"
-                placeholder="Buscar"
-                aria-label="Buscar"
-              />
-              <button class="btn btn-outline-light rounded-pill" type="submit">
-                Buscar
-              </button>
-            </form>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Restaurante Dev</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-3" role="search">
+                        <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscar"
+                            aria-label="Buscar">
+                        <button class="btn btn-outline-light rounded-pill" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <div class="container">
-      <h1 class="my-4 text-center">Cardápio do Restaurante</h1>
+    <div class="container my-5">
+        <h1 class="text-center my-4">Cardápio do Restaurante</h1>
 
-      <!-- Seção de Categorias -->
-      <div class="row">
-          <!-- Categoria 1: Entradas -->
-          <div class="col-md-6 col-lg-4">
-              <h3 class="text-primary">Entradas</h3>
-              <ul class="list-group mb-4">
-                  <li class="list-group-item">
-                      <h5>Salada Caesar</h5>
-                      <p>Alface, frango grelhado, parmesão e croutons.</p>
-                      <p><strong>Preço:</strong> R$ 18,00</p>
-                  </li>
-                  <li class="list-group-item">
-                      <h5>Bruschetta</h5>
-                      <p>Pão italiano com tomate, manjericão e azeite.</p>
-                      <p><strong>Preço:</strong> R$ 15,00</p>
-                  </li>
-                  <!-- Adicione mais itens de entrada aqui -->
-              </ul>
-          </div>
+        <!-- Seção de Categorias -->
+        <div class="row">
+            <!-- Categoria 1: Entradas -->
+            <div class="col-md-6 col-lg-4">
+                <h3 class="text-primary mb-3">Entradas</h3>
+                <!-- Card 1 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Salada Caesar</h5>
+                        <p class="card-text">Alface, frango grelhado, parmesão e croutons.</p>
+                        <p><strong>Preço:</strong> R$ 18,00</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bruschetta</h5>
+                        <p class="card-text">Pão italiano com tomate, manjericão e azeite.</p>
+                        <p><strong>Preço:</strong> R$ 15,00</p>
+                    </div>
+                </div>
+                <!-- Outros itens de entrada -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Coxinha de Frango</h5>
+                        <p class="card-text">Coxinha de frango com catupiry.</p>
+                        <p><strong>Preço:</strong> R$ 10,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Torresmo</h5>
+                        <p class="card-text">Torresmo crocante e saboroso.</p>
+                        <p><strong>Preço:</strong> R$ 12,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Batata Frita</h5>
+                        <p class="card-text">Batata frita crocante com molhos.</p>
+                        <p><strong>Preço:</strong> R$ 12,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Queijo Coalho Assado</h5>
+                        <p class="card-text">Queijo coalho assado na brasa.</p>
+                        <p><strong>Preço:</strong> R$ 15,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolinho de Bacalhau</h5>
+                        <p class="card-text">Bolinho crocante de bacalhau.</p>
+                        <p><strong>Preço:</strong> R$ 14,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mini Pastéis</h5>
+                        <p class="card-text">Mini pastéis de carne e queijo.</p>
+                        <p><strong>Preço:</strong> R$ 15,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Lulas à Dorê</h5>
+                        <p class="card-text">Lulas empanadas e fritas.</p>
+                        <p><strong>Preço:</strong> R$ 18,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Carpaccio</h5>
+                        <p class="card-text">Carne crua temperada com azeite e parmesão.</p>
+                        <p><strong>Preço:</strong> R$ 20,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sopa de Cebola</h5>
+                        <p class="card-text">Sopa de cebola gratinada.</p>
+                        <p><strong>Preço:</strong> R$ 25,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Caldo Verde</h5>
+                        <p class="card-text">Caldo verde com linguiça e batata.</p>
+                        <p><strong>Preço:</strong> R$ 20,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Canapés</h5>
+                        <p class="card-text">Canapés variados com diferentes sabores.</p>
+                        <p><strong>Preço:</strong> R$ 18,00</p>
+                    </div>
+                </div>
+            </div>
 
-          <!-- Categoria 2: Pratos Principais -->
-          <div class="col-md-6 col-lg-4">
-              <h3 class="text-primary">Pratos Principais</h3>
-              <ul class="list-group mb-4">
-                  <li class="list-group-item">
-                      <h5>Filé Mignon</h5>
-                      <p>Carne suculenta grelhada com molho de vinho.</p>
-                      <p><strong>Preço:</strong> R$ 50,00</p>
-                  </li>
-                  <li class="list-group-item">
-                      <h5>Salmão Grelhado</h5>
-                      <p>Salmão grelhado com legumes cozidos.</p>
-                      <p><strong>Preço:</strong> R$ 45,00</p>
-                  </li>
-                  <!-- Adicione mais itens de pratos principais aqui -->
-              </ul>
-          </div>
+            <!-- Categoria 2: Pratos Principais -->
+            <div class="col-md-6 col-lg-4">
+                <h3 class="text-primary mb-3">Pratos Principais</h3>
+                <!-- Card 1 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Filé Mignon</h5>
+                        <p class="card-text">Carne suculenta grelhada com molho de vinho.</p>
+                        <p><strong>Preço:</strong> R$ 50,00</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Salmão Grelhado</h5>
+                        <p class="card-text">Salmão grelhado com legumes cozidos.</p>
+                        <p><strong>Preço:</strong> R$ 45,00</p>
+                    </div>
+                </div>
+                <!-- Outros itens de pratos principais -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Peito de Frango Grelhado</h5>
+                        <p class="card-text">Peito de frango grelhado com arroz e salada.</p>
+                        <p><strong>Preço:</strong> R$ 35,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Strogonoff de Frango</h5>
+                        <p class="card-text">Frango ao molho cremoso com arroz e batata palha.</p>
+                        <p><strong>Preço:</strong> R$ 40,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Lasanha de Carne</h5>
+                        <p class="card-text">Lasanha com carne moída e molho bechamel.</p>
+                        <p><strong>Preço:</strong> R$ 35,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Ravioli de Queijo</h5>
+                        <p class="card-text">Ravioli recheado com queijo e molho de tomate.</p>
+                        <p><strong>Preço:</strong> R$ 38,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Espaguete à Bolonhesa</h5>
+                        <p class="card-text">Espaguete com molho à bolonhesa.</p>
+                        <p><strong>Preço:</strong> R$ 32,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Risoto de Frutos do Mar</h5>
+                        <p class="card-text">Risoto com camarões, mexilhões e lula.</p>
+                        <p><strong>Preço:</strong> R$ 60,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Costela Assada</h5>
+                        <p class="card-text">Costela suína assada com batatas e molho.</p>
+                        <p><strong>Preço:</strong> R$ 50,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Coxinha de Frango com Catupiry</h5>
+                        <p class="card-text">Coxinha de frango recheada com catupiry.</p>
+                        <p><strong>Preço:</strong> R$ 25,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Picanha na Churrasqueira</h5>
+                        <p class="card-text">Picanha grelhada com farofa e arroz.</p>
+                        <p><strong>Preço:</strong> R$ 75,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Moqueca de Peixe</h5>
+                        <p class="card-text">Moqueca de peixe com leite de coco e dendê.</p>
+                        <p><strong>Preço:</strong> R$ 55,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Churrasco Misto</h5>
+                        <p class="card-text">Carnes variadas grelhadas com acompanhamentos.</p>
+                        <p><strong>Preço:</strong> R$ 70,00</p>
+                    </div>
+                </div>
+            </div>
 
-          <!-- Categoria 3: Sobremesas -->
-          <div class="col-md-6 col-lg-4">
-              <h3 class="text-primary">Sobremesas</h3>
-              <ul class="list-group mb-4">
-                  <li class="list-group-item">
-                      <h5>Tiramisu</h5>
-                      <p>Sobremesa italiana com café e mascarpone.</p>
-                      <p><strong>Preço:</strong> R$ 20,00</p>
-                  </li>
-                  <li class="list-group-item">
-                      <h5>Pudim de Leite</h5>
-                      <p>Sobremesa cremosa com calda de caramelo.</p>
-                      <p><strong>Preço:</strong> R$ 18,00</p>
-                  </li>
-                  <!-- Adicione mais itens de sobremesas aqui -->
-              </ul>
-          </div>
-      </div>
-  </div>
-  </body>
+            <!-- Categoria 3: Sobremesas -->
+            <div class="col-md-6 col-lg-4">
+                <h3 class="text-primary mb-3">Sobremesas</h3>
+                <!-- Card 1 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiramisu</h5>
+                        <p class="card-text">Sobremesa italiana com café e mascarpone.</p>
+                        <p><strong>Preço:</strong> R$ 20,00</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pudim de Leite</h5>
+                        <p class="card-text">Sobremesa cremosa com calda de caramelo.</p>
+                        <p><strong>Preço:</strong> R$ 18,00</p>
+                    </div>
+                </div>
+                <!-- Outros itens de sobremesas -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sorvete</h5>
+                        <p class="card-text">Sorvete de diversos sabores.</p>
+                        <p><strong>Preço:</strong> R$ 12,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolo de Chocolate</h5>
+                        <p class="card-text">Bolo de chocolate com recheio cremoso.</p>
+                        <p><strong>Preço:</strong> R$ 25,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheesecake</h5>
+                        <p class="card-text">Cheesecake com calda de frutas vermelhas.</p>
+                        <p><strong>Preço:</strong> R$ 22,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Creme Brulée</h5>
+                        <p class="card-text">Creme à base de gemas e açúcar caramelizado.</p>
+                        <p><strong>Preço:</strong> R$ 20,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mousse de Maracujá</h5>
+                        <p class="card-text">Mousse de maracujá com calda de maracujá.</p>
+                        <p><strong>Preço:</strong> R$ 15,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Gelatina</h5>
+                        <p class="card-text">Gelatina de frutas com calda de frutas.</p>
+                        <p><strong>Preço:</strong> R$ 8,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Petit Gâteau</h5>
+                        <p class="card-text">Bolo quente com sorvete e calda de chocolate.</p>
+                        <p><strong>Preço:</strong> R$ 25,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pavê</h5>
+                        <p class="card-text">Pavê de chocolate com creme.</p>
+                        <p><strong>Preço:</strong> R$ 20,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Rabanada</h5>
+                        <p class="card-text">Pão doce com açúcar e canela.</p>
+                        <p><strong>Preço:</strong> R$ 12,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Doce de Leite</h5>
+                        <p class="card-text">Doce de leite caseiro.</p>
+                        <p><strong>Preço:</strong> R$ 15,00</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Baba de Moça</h5>
+                        <p class="card-text">Doce com ovos, leite de coco e calda.</p>
+                        <p><strong>Preço:</strong> R$ 18,00</p>
+                    </div>
+                </div>
+            </div>
+
+         <!-- Categoria 4: Bebidas -->
+<div class="row">
+    <!-- Seção de Refrigerantes -->
+    <div class="col-md-6 col-lg-4">
+        <h3 class="text-primary mb-3">Refrigerantes</h3>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Coca-Cola</h5>
+                <p class="card-text">Lata ou garrafa.</p>
+                <p><strong>Preço:</strong> R$ 6,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Pepsi</h5>
+                <p class="card-text">Lata ou garrafa.</p>
+                <p><strong>Preço:</strong> R$ 6,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Guaraná</h5>
+                <p class="card-text">Guaraná Antarctica ou Brahma.</p>
+                <p><strong>Preço:</strong> R$ 6,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Fanta</h5>
+                <p class="card-text">Laranja ou uva.</p>
+                <p><strong>Preço:</strong> R$ 6,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Sprite</h5>
+                <p class="card-text">Bebida de limão com gás.</p>
+                <p><strong>Preço:</strong> R$ 6,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Água Tônica</h5>
+                <p class="card-text">Bebida gaseificada de quinino.</p>
+                <p><strong>Preço:</strong> R$ 7,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Soda Limón</h5>
+                <p class="card-text">Bebida gaseificada de limão.</p>
+                <p><strong>Preço:</strong> R$ 7,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Refrigerante Zero</h5>
+                <p class="card-text">Variedade de opções sem açúcar.</p>
+                <p><strong>Preço:</strong> R$ 6,00</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Seção de Sucos -->
+    <div class="col-md-6 col-lg-4">
+        <h3 class="text-primary mb-3">Sucos</h3>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Suco de Laranja</h5>
+                <p class="card-text">Suco de laranja natural.</p>
+                <p><strong>Preço:</strong> R$ 8,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Suco de Abacaxi</h5>
+                <p class="card-text">Suco de abacaxi natural.</p>
+                <p><strong>Preço:</strong> R$ 8,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Suco de Maracujá</h5>
+                <p class="card-text">Suco de maracujá natural.</p>
+                <p><strong>Preço:</strong> R$ 8,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Suco de Manga</h5>
+                <p class="card-text">Suco de manga natural.</p>
+                <p><strong>Preço:</strong> R$ 8,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Suco de Uva</h5>
+                <p class="card-text">Suco de uva integral.</p>
+                <p><strong>Preço:</strong> R$ 9,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Suco de Limão</h5>
+                <p class="card-text">Suco de limão natural.</p>
+                <p><strong>Preço:</strong> R$ 8,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Suco de Goiaba</h5>
+                <p class="card-text">Suco de goiaba natural.</p>
+                <p><strong>Preço:</strong> R$ 9,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Suco de Morango</h5>
+                <p class="card-text">Suco de morango natural.</p>
+                <p><strong>Preço:</strong> R$ 9,00</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Seção de Bebidas Alcoólicas -->
+    <div class="col-md-6 col-lg-4">
+        <h3 class="text-primary mb-3">Bebidas Alcoólicas</h3>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Cerveja</h5>
+                <p class="card-text">Cerveja artesanal ou tradicional.</p>
+                <p><strong>Preço:</strong> R$ 10,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Vinho Tinto</h5>
+                <p class="card-text">Vinho tinto seco ou suave.</p>
+                <p><strong>Preço:</strong> R$ 50,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Vinho Branco</h5>
+                <p class="card-text">Vinho branco seco ou suave.</p>
+                <p><strong>Preço:</strong> R$ 50,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Whisky</h5>
+                <p class="card-text">Whisky envelhecido com gelo ou puro.</p>
+                <p><strong>Preço:</strong> R$ 60,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Caipirinha</h5>
+                <p class="card-text">Caipirinha de limão ou outras frutas.</p>
+                <p><strong>Preço:</strong> R$ 15,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Mojito</h5>
+                <p class="card-text">Mojito com hortelã e rum.</p>
+                <p><strong>Preço:</strong> R$ 15,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Margarita</h5>
+                <p class="card-text">Margarita com tequila e limão.</p>
+                <p><strong>Preço:</strong> R$ 15,00</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Gin Tônica</h5>
+                <p class="card-text">Gin tônica com limão e especiarias.</p>
+                <p><strong>Preço:</strong> R$ 18,00</p>
+            </div>
+        </div>
+    </div>
+</div>
+      
+    <!-- Scripts JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../js/front.js"></script>
+</body>
+
 </html>
