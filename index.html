@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../assets/Logo/teste.png" type="image/png" class="favicon">
     <title>Restaurante Dev</title>
-    <!-- Link para CSS do Bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <!-- Link para CSS personalizado -->
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
 
@@ -212,7 +210,7 @@
               </div>
           </div>
 
-          <!-- Seção de Reserva -->
+   <!-- Seção de Reserva -->
 <section id="reservas" class="py-5 text-center">
     <div class="container">
       <div class="row justify-content-center">
@@ -220,7 +218,7 @@
           <h2 class="section-title">Faça uma Reserva</h2>
         
           <!-- Formulário de Reserva -->
-          <form action="/caminho-para-processar-reserva" method="POST" id="reservaForm">
+          <form action="https://formsubmit.co/ajax/jvdesenvolvedorfull@gmail.com" method="POST" id="reservaForm" data-form>
             <div class="row g-3">
               <!-- Data -->
               <div class="col-md-6">
@@ -254,12 +252,211 @@
             </div>
   
             <!-- Botão para Enviar Reserva -->
-            <button type="submit" class="btn btn-primary rounded-pill mt-4">Fazer Reserva</button>
+            <button type="submit" class="btn btn-primary rounded-pill mt-4" data-button>Fazer Reserva</button>
           </form>
         </div>
       </div>
     </div>
-  </section>
+</section>
+
+      <!-- Seção Destaques -->
+<section id="destaques" class="py-5 text-center">
+    <div class="container">
+        <h2 class="section-title">Seção de Destaques</h2>
+        <div class="row g-3">
+         
+            <div class="col-md-12 col-sm-12">
+                <div class="card h-100" data-bs-toggle="tooltip" title="Aproveite descontos em pratos selecionados.">
+                    <img src="../assets/Destaques/promocao1.jpg" class="card-img-top rounded img-fluid" alt="Promoção Atual" />
+                    <div class="card-body">
+                        <h5 class="card-title">Promoção Especial</h5>
+                        <p class="card-text">Desfrute de uma promoção exclusiva em pratos selecionados!</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPromocaoEspecial" aria-controls="offcanvasPromocaoEspecial">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasPromocaoEspecial" aria-labelledby="offcanvasPromocaoEspecialLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasPromocaoEspecialLabel">Promoção Especial</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body">
+           
+            <div class="mb-4">
+                <h6>1. Salmão ao Molho Cítrico</h6>
+                <img src="../assets/Promocao/prato1.jpg" class="img-fluid" alt="Salmão ao Molho Cítrico" />
+                <p>Delicie-se com um prato de salmão suculento ao molho cítrico, servido com legumes frescos. Uma experiência única para os amantes de peixes.</p>
+                <p><strong>Preço Promocional:</strong> R$ 30,00</p>
+            </div>
+            
+            
+            <div class="mb-4">
+                <h6>2. Risoto de Camarão</h6>
+                <img src="../assets/Promocao/prato2.jpg" class="img-fluid" alt="Risoto de Camarão" />
+                <p>Um risoto cremoso com camarões frescos, ervas aromáticas e um toque de açafrão. Perfeito para os fãs de frutos do mar.</p>
+                <p><strong>Preço Promocional:</strong> R$ 35,00</p>
+            </div>
+            
+            
+            <div class="mb-4">
+                <h6>3. Filé Mignon com Batatas</h6>
+                <img src="../assets/Promocao/prato3.jpg" class="img-fluid" alt="Filé Mignon com Batatas" />
+                <p>Desfrute de um suculento filé mignon grelhado, acompanhado de batatas assadas e um molho especial. Um prato que agrada a todos os paladares.</p>
+                <p><strong>Preço Promocional:</strong> R$ 45,00</p>
+            </div>
+            
+            
+            <div class="mb-4">
+                <h6>4. Frango Grelhado com Vegetais</h6>
+                <img src="../assets/Promocao/prato4.jpg" class="img-fluid" alt="Frango Grelhado com Vegetais" />
+                <p>Uma refeição saudável com frango grelhado, servido com uma variedade de vegetais frescos. Um prato leve e saboroso.</p>
+                <p><strong>Preço Promocional:</strong> R$ 25,00</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+<section id="destaques" class="py-5 text-center">
+    <div class="row g-3">
+      
+        <div class="col-md-12 col-sm-12">
+            <div class="card h-100" data-bs-toggle="tooltip" title="Participe de eventos especiais com pratos exclusivos e experiências únicas.">
+                <img src="../assets/Destaques/evento1.jpg" class="card-img-top rounded img-fluid" alt="Evento Especial" />
+                <div class="card-body">
+                    <h5 class="card-title">Evento Especial</h5>
+                    <p class="card-text">Participe de eventos especiais com pratos exclusivos e experiências únicas!</p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEventoEspecial" aria-controls="offcanvasEventoEspecial">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEventoEspecial" aria-labelledby="offcanvasEventoEspecialLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasEventoEspecialLabel">Evento Especial</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+    </div>
+    <div class="offcanvas-body">
+      
+        <div class="mb-4">
+            <h6>1. Festival de Gastronomia</h6>
+            <img src="../assets/Evento/evento1.jpg" class="img-fluid" alt="Festival de Gastronomia" />
+            <p>Participe de um festival gastronômico com pratos inovadores, apresentações culinárias e degustações. Uma experiência única para os amantes da culinária.</p>
+            <p><strong>Data:</strong> 15 de maio de 2024</p>
+            <p><strong>Local:</strong> Restaurante Gourmet</p>
+        </div>
+        
+       
+        <div class="mb-4">
+            <h6>2. Jantar à Luz de Velas</h6>
+            <img src="../assets/Evento/evento2.jpg" class="img-fluid" alt="Jantar à Luz de Velas" />
+            <p>Aproveite uma noite romântica com um jantar à luz de velas, pratos especiais e música ao vivo. Perfeito para casais.</p>
+            <p><strong>Data:</strong> 20 de maio de 2024</p>
+            <p><strong>Local:</strong> Restaurante Romântico</p>
+        </div>
+        
+       
+        <div class="mb-4">
+            <h6>3. Aula de Culinária</h6>
+            <img src="../assets/Evento/evento3.jpg" class="img-fluid" alt="Aula de Culinária" />
+            <p>Participe de uma aula de culinária com chefs renomados. Aprenda a preparar pratos exclusivos e surpreenda seus convidados em casa.</p>
+            <p><strong>Data:</strong> 25 de maio de 2024</p>
+            <p><strong>Local:</strong> Escola de Culinária Gourmet</p>
+        </div>
+        
+        
+        <div class="mb-4">
+            <h6>4. Festival de Vinhos</h6>
+            <img src="../assets/Evento/evento4.jpg" class="img-fluid" alt="Festival de Vinhos" />
+            <p>Desfrute de um festival de vinhos com degustações, harmonizações com pratos exclusivos e palestras de especialistas.</p>
+            <p><strong>Data:</strong> 30 de maio de 2024</p>
+            <p><strong>Local:</strong> Vinícola Local</p>
+        </div>
+    </div>
+</div>
+</section>
+  
+
+
+<section id="destaques" class="py-5 text-center">
+    <div class="container">
+        <div class="row g-3">
+
+            <div class="col-md-12 col-sm-12">
+                <div class="card h-100" data-bs-toggle="tooltip" title="Experimente nossos novos pratos deliciosos e inovadores.">
+                    <img src="../assets/Destaques/novo_prato.jpg" class="card-img-top rounded img-fluid" alt="Novo Prato" />
+                    <div class="card-body">
+                        <h5 class="card-title">Novo Prato</h5>
+                        <p class="card-text">Experimente nossos novos pratos deliciosos que acabaram de chegar ao menu!</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNovoPrato" aria-controls="offcanvasNovoPrato">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNovoPrato" aria-labelledby="offcanvasNovoPratoLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNovoPratoLabel">Novo Prato</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body">
+            
+            <div class="mb-4">
+                <h6>1. Massa com Trufas</h6>
+                <img src="../assets/NovoPrato/prato1.jpg" class="img-fluid" alt="Massa com Trufas" />
+                <p>Desfrute de uma massa caseira com trufas finas, acompanhada de um molho cremoso e parmesão ralado. Um prato requintado para os amantes de massas.</p>
+                <p><strong>Preço:</strong> R$ 40,00</p>
+            </div>
+
+           
+            <div class="mb-4">
+                <h6>2. Moqueca de Peixe</h6>
+                <img src="../assets/NovoPrato/prato2.jpg" class="img-fluid" alt="Moqueca de Peixe" />
+                <p>Um prato típico da culinária brasileira, feito com peixe fresco, leite de coco e uma variedade de temperos. Saboroso e exótico.</p>
+                <p><strong>Preço:</strong> R$ 35,00</p>
+            </div>
+
+         
+            <div class="mb-4">
+                <h6>3. Costela ao Forno</h6>
+                <img src="../assets/NovoPrato/prato3.jpg" class="img-fluid" alt="Costela ao Forno" />
+                <p>Costela ao forno com uma marinada especial, servida com batatas assadas e legumes. Uma refeição reconfortante e saborosa.</p>
+                <p><strong>Preço:</strong> R$ 50,00</p>
+            </div>
+
+            
+            <div class="mb-4">
+                <h6>4. Sushi Variado</h6>
+                <img src="../assets/NovoPrato/prato4.jpg" class="img-fluid" alt="Sushi Variado" />
+                <p>Um prato de sushi variado com peixes frescos, vegetais e arroz especial. Uma excelente escolha para os fãs de culinária japonesa.</p>
+                <p><strong>Preço:</strong> R$ 45,00</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  
+  
+  </main>
   
         </main>
 
@@ -363,7 +560,7 @@
       </div>
     </footer>
 
-    <!-- Scripts JavaScript -->
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
